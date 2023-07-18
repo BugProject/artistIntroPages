@@ -121,3 +121,22 @@ body {
 .artistNav li:last-child a::after {
     display: none;
 }
+
+.titleSong {
+    margin-top: 80px;
+}
+.titleSong .artistName {
+    margin: 0;
+    text-align: center;
+}
+.titleSong h3 {
+    margin: 0;
+}
+.titleSong .songName {
+    /* padding-top: 5px; */
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 10px;
+}
