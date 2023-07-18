@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 910px;
+    margin: 0 auto;
+}
+
+.headerArea {
+    border-top: 1px solid #ababab;
+    /* display: flex;
+    justify-content: center; */
+    margin: 0 auto;
+    /* width: 910px; */
+}
+.headerArea .title {
+    float: left;
+}
+.headerArea .locations {
+    float: right;
+}
+.locations ol {
+    list-style-type: none;
+    color: #282828;
+    padding-right: 6px;
+}
+.locations li {
+    display: inline-block;
+    font-size: 11px;
+}
+.locations .home {
+    /* text-decoration: none; */
+    color: #282828;
+    padding-right: 10px;
+}
+.artistBanner {
+    clear: both;
+    height: 200px;
+    display: flex;
+    position: relative;
+}
+.artistBanner .artistImg {
+    width: 800px;
+    height: 150px;
+    overflow: hidden;
+    text-align: center;
+
+}
+.artistImg .photoList {
+    width: 800px;
+    overflow: hidden;  
+}
+.artistImg .photoList ul {
+    list-style: none;
+    margin-top: 0;
+    /* margin: 0 auto;  */
+    /* display: flex; */
+}
+.artistImg .photoList li {
+    float: left;
+    /* padding: 0 15px; */
+}
+.photoList a {
+    overflow: hidden;
+    text-decoration: none;
+}
+.photoList img {
+    width: 100%;
+}
+.artistBanner button {
+    cursor: pointer;
+    border: none;
+    width: 50px;
+    height: 150px;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+}
+.artistBanner .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.artistName {
+    color: black;
+    font-size: 3rem;
+}
+.artistNav {
+    height: 80px;
+    width: 100%;
+    overflow: hidden;
+}
+.artistNav ul {
+    padding-top: 10px;
+    height: 40px;
+    list-style: none;
+    text-align: center;
+    background-color: gainsboro;
+    border: 0.5px solid black;
+}
+.artistNav li {
+    display: inline-block;
+    font-size: 4px;
+}
+.artistNav li a::after {
+    margin-left: 10px;
+    content: '|';
+    font-size: 8px;
+    columns: #C8C8C8 !important;
+}
+.artistNav a {
+    color: #282828;
+    cursor: pointer;
+    margin: 4px;
+}
+.artistNav a:hover, .artistNav a:focus {
+    color: red;
+}
+.artistNav li:last-child a::after {
+    display: none;
+}
