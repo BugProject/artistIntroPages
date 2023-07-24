@@ -1,7 +1,12 @@
-body{
-    margin: 0;
-    padding: 0;
+* {
+    box-sizing: border-box;
 }
+
+body {
+    width: 910px;
+    margin: 0 auto;
+}
+
 
 a:link { 
     color: #737373;
@@ -87,4 +92,277 @@ a {
     color: #282828;
     word-break: break-all;
     margin-bottom: 15px;
+}
+
+
+.headerArea {
+    border-top: 1px solid #ababab;
+    /* display: flex;
+    justify-content: center; */
+    margin: 0 auto;
+    /* width: 910px; */
+}
+.headerArea .title {
+    float: left;
+}
+.headerArea .locations {
+    float: right;
+}
+.locations ol {
+    list-style-type: none;
+    color: #282828;
+    padding-right: 6px;
+}
+.locations li {
+    display: inline-block;
+    font-size: 11px;
+}
+.locations .home {
+    /* text-decoration: none; */
+    color: #282828;
+    padding-right: 10px;
+}
+.artistBanner {
+    clear: both;
+    height: 200px;
+    display: flex;
+    position: relative;
+}
+.artistBanner .artistImg {
+    width: 800px;
+    height: 150px;
+    overflow: hidden;
+    text-align: center;
+
+}
+.artistImg .photoList {
+    width: 800px;
+    overflow: hidden;  
+}
+.artistImg .photoList ul {
+    list-style: none;
+    margin-top: 0;
+    /* margin: 0 auto;  */
+    /* display: flex; */
+}
+.artistImg .photoList li {
+    float: left;
+    /* padding: 0 15px; */
+}
+.photoList a {
+    overflow: hidden;
+    text-decoration: none;
+}
+.photoList img {
+    width: 100%;
+}
+.artistBanner button {
+    cursor: pointer;
+    border: none;
+    width: 50px;
+    height: 150px;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+}
+.artistBanner .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.artistName {
+    color: black;
+    font-size: 3rem;
+}
+.artistNav {
+    height: 80px;
+    width: 100%;
+    overflow: hidden;
+}
+.artistNav ul {
+    padding-top: 10px;
+    height: 40px;
+    list-style: none;
+    text-align: center;
+    background-color: gainsboro;
+    border: 0.5px solid black;
+}
+.artistNav li {
+    display: inline-block;
+    font-size: 4px;
+}
+.artistNav li a::after {
+    margin-left: 10px;
+    content: '|';
+    font-size: 8px;
+    columns: #C8C8C8 !important;
+}
+.artistNav a {
+    color: #282828;
+    cursor: pointer;
+    margin: 4px;
+}
+.artistNav span:hover, .artistNav a:focus {
+    color: red;
+}
+.artistNav li:last-child a::after {
+    display: none;
+}
+
+.titleSong{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color:#f2f2f2;
+}
+
+hr{
+    margin:0 auto;
+}
+
+.MV {
+    width: 100%;
+    height: 500px;
+    margin:0 auto;
+}
+
+.albumInfo{
+    padding-top: 100px;
+    background-color: #f2f2f2;
+}
+
+.langBtn{
+    font-family: 'Noto Serif KR', serif;
+    display: flex;
+    justify-content: center;
+    color:#e488a1;
+    gap: 30px;
+}
+
+.langBtn.selected {
+    border: 1px solid #e488a1;
+}
+
+.Korean2{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+}
+
+.Korean2:hover{
+    cursor: pointer;
+}
+
+
+.Japanese2{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+.Japanese2:hover{
+    
+    cursor: pointer;
+}
+
+
+.English2{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+}
+
+.English2:hover{
+    
+    cursor: pointer;
+}
+
+
+.Chinese2{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+}
+
+.Chinese2:hover{
+    
+    cursor: pointer;
+}
+
+.information{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    line-height: 1.8em;
+    color: #444;
+}
+
+.cover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover>img{
+    margin-top: 50px;
+    width: 329px;
+    height: 329px;
+    box-shadow: 5px 5px 10px #c4c4c4;
+}
+
+.tracklist{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tracklist>img{
+    width: 813px;
+    height: 537px;
+}
+
+.mainimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.mainimg>img{
+    width: 910px;
+    height: 1036px;
+}
+
+.more{
+    font-family: 'Titillium Web', sans-serif;
+    color: #282828;
+    display:flex;
+    justify-content: center;
+    font-size: 2.4em;
 }
