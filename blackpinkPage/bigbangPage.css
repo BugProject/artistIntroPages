@@ -159,3 +159,66 @@ body {
     height: 500px;
     margin-top: 20px;
 }
+
+.language {
+    text-align: center;
+    margin-top: 60px;
+}
+.language button {
+    background-color: inherit;
+    border: none;
+    color: gray;
+    width: 30px;
+    margin-right: 5px;
+    font-size: 1em;
+    font-weight: 700;
+}
+.language button:hover {
+    padding: 5px;
+    border: 1px solid black;
+    color: black;
+}
+.language button::selection {
+    border: 1px solid #000;
+    color: black;
+}
+
+.songInfo {
+    margin-top: 50px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+}
+.songInfo p {
+    margin-bottom: 25px;
+    line-height: 1.8em;
+}
+
+.songImg {
+    text-align: center;
+    margin-top: 80px;
+}
+.songImg img {
+    box-shadow: 0px 0px 35px #ccc;
+    width: 300px;
+    height: 300px;
+}
+
+.service {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.option {
+    width: 300px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+.buy {
+    margin-top: 15px;
+}
