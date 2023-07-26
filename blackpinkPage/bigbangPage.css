@@ -201,7 +201,7 @@ a {
     cursor: pointer;
     margin: 4px;
 }
-.artistNav a:hover, .artistNav a:focus {
+.artistNav span:hover, .artistNav span:focus {
     color: red;
 }
 .artistNav li:last-child a::after {
