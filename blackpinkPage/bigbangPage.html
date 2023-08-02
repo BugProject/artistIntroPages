@@ -107,13 +107,13 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen class="MV"></iframe>
                 <div class="language">
-                    <button class="korean">K</button>
-                    <button class="english">E</button>
-                    <button class="chinese">C</button>
-                    <button class="japanese">J</button>
+                    <button class="korean" onclick="showKorean()">K</button>
+                    <button class="english" onclick="showEnglish()">E</button>
+                    <button class="chinese" onclick="showChinese()">C</button>
+                    <button class="japanese" onclick="showJapanese()">J</button>
                 </div>
                 <article class="songInfo">
-                    <div class="koreanInfo">
+                    <div class="KoreanInfo" id="KoreanInfoId">
                         <p class="titleInfo" style="font-weight: 700;">[빅뱅, 그 찬란한 이름과 그들의 사게절]</p>
                         <p>빅뱅의 싱글 '꽃 길' 발표 이 후 약 4년 만에 신곡 '봄여름가을겨울 (still life)'로 돌아왔다. </p>
                         <p>빅뱅의 '봄여름가을겨울'은 오가닉하고 따뜻한 밴드 사운드를 기반으로 한 곡으로, 타임리스한 멜로디에 덧 붙여진 아름다운 가사가 인상적인 곡이다.</p>
@@ -124,6 +124,37 @@
                             시대의 '클래식'으로 남기에 부족함이 없을 것 으로 보인다.</p>
                         <p>많은 이들이 너무도 기다려온 "빅뱅". <br>
                             그들이 세상에 선보이는 '봄여름가을겨울'은 많은 사람들로 하여금 마음에 감동과 위안을 주는 곡으로 오랜 시간 기억될 것이다.</p>
+                    </div>
+                    <div class="EnglishInfo" id="EnglishInfoId">
+                        <p style="font-weight: 700;">[BIGBANG, the everlasting title and their seasons]</p>
+                        <p>BIGBANG has comeback with ‘Still Life’ in about 4 years since they released their last single ‘FLOWER ROAD’. </p>
+                        <p>BIGBANG’s ‘Still Life’ is based on an organic yet warm band sound, with beautiful lyrics on top of timeless melodies. </p>
+                        <p>The introduction lyrics of ‘Still Life’ which portray the nature and cycle of time and seasons, allow listeners to think about their past. The peaceful recollection of BIGBANG members’ youth narrated by their voices touches the hearts of people as if they’re talking about the beautiful memories of youth experienced by everyone. </p>
+                        <p>The sentimental codes and simple guitar riffs that open up the second part of the song, along with the warm arrangements that support the sound, make it more than enough for BIGBANG’s ‘Still Life’ to be left as a ‘classic’ song of a generation. </p>
+                        <p>So many people have been waiting for “BIGBANG”.<br>
+                            ‘Still Life’, which they’ll unveil to the world, will be forever remembered as a song that comforts and touches the hearts of many people for a long time. </p>
+                    </div>
+                    <div class="ChineseInfo" id="ChineseInfoId">
+                        <p style="font-weight: 700;">[BIGBANG,那个灿烂的名字和他们的四季]</p>
+                        <p>BIGBANG发行单曲《Flower Road》后时隔约四年携新曲《Still Life》回归。</p>
+                        <p>BIGBANG的新曲《Still Life》是一首以有机而温暖的乐队演奏声为基础的歌曲,在永恒的旋律中添加了唯美的歌词给人以深刻的印象。</p>
+                        <p>《Still Life》歌词的导入部分讲述了从春天到冬天时间的流逝和季节的循环,歌曲的魅力就在于让人听过之后会想到自己走过的人生路。<br>
+							BIGBANG成员们通过歌唱唤起了人们对青春的回忆,像是在诉说我们所有人经历过的青春一样，平静而优美的旋律流淌在心间，给人们带来了安慰。<br>
+						歌曲后半部分突出的抒情色彩,打开导入部分的淡淡的吉他演奏,还有与之相衬托的温暖编曲要素,由这些特色构成的BIGBANG歌曲《Still Life》想必会成为一个时代的“经典”。</p>
+                        <p>让众人期待已久的“BIGBANG”。<br>
+							他们向世人展现的《Still Life》是一首能带给很多人感动和安慰的歌曲,将会长久地留在人们的记忆中。
+						</p>
+                    </div>
+                    <div class="JapaneseInfo" id="JapaneseInfoId">
+                        <p style="font-weight: 700;">[BIGBANG，那个灿烂的名字和他们的四季]</p>
+                        <p>BIGBANG发行单曲《Flower Road》后时隔约四年携新曲《Still Life》回归。</p>
+                        <p>BIGBANG的新曲《Still Life》是一首以有机而温暖的乐队演奏声为基础的歌曲，在永恒的旋律中添加了唯美的歌词给人以深刻的印象。</p>
+                        <p>《Still Life》歌词的导入部分讲述了从春天到冬天时间的流逝和季节的循环，歌曲的魅力就在于让人听过之后会想到自己走过的人生路。<br>
+							BIGBANG成员们通过歌唱唤起了人们对青春的回忆，像是在诉说我们所有人经历过的青春一样，平静而优美的旋律流淌在心间，给人们带来了安慰。<br>
+						歌曲后半部分突出的抒情色彩，打开导入部分的淡淡的吉他演奏，还有与之相衬托的温暖编曲要素，由这些特色构成的BIGBANG歌曲《Still Life》想必会成为一个时代的“经典”。</p>
+                        <p>让众人期待已久的“BIGBANG”。<br>
+							他们向世人展现的《Still Life》是一首能带给很多人感动和安慰的歌曲，将会长久地留在人们的记忆中。
+						</p>
                     </div>
                 </article>
                 <div class="songImg">
@@ -136,7 +167,7 @@
             </div>
         </div>
     </section>
-    <script type="text/javascript" src="script.js"></script>
+    <script src="./bigbangPage.js"></script>
 </body>
 
 </html>

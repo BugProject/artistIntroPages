@@ -252,22 +252,24 @@ a {
 }
 .language button {
     background-color: inherit;
-    border: none;
+    border: 2px solid transparent;
     color: gray;
     width: 30px;
     margin-right: 5px;
     font-size: 1em;
     font-weight: 700;
+    padding: 5px;
 }
 .language button:hover {
     padding: 5px;
     border: 1px solid black;
     color: black;
 }
-.language button::selection {
+.language button:focus {
     border: 1px solid #000;
     color: black;
 }
+
 
 .songInfo {
     margin-top: 50px;
