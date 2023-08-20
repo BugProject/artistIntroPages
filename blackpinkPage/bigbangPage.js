@@ -62,6 +62,8 @@ function showEnglish() {
         ChinseInfo.style.display = "none";
         JapaneseInfo.style.display = "none";
         KoreanInfo.style.display = "none";
+        korean.style.color = "gray";
+        korean.style.border = "none";
     }
     // else {
     //     EnglishInfo.style.display = "block";
@@ -88,3 +90,20 @@ function showJapanese() {
         ChinseInfo.style.display = "none";
     }
 }
+
+// show dropdown
+document.querySelector('.listenImg').addEventListener('mouseover', function() {
+    document.querySelector('.Box1').style.display = 'block';
+});
+
+document.querySelector('.option').addEventListener('mouseleave', function() {
+    document.querySelector('.Box1').style.display = 'none';
+});
+
+document.querySelector('.buyImg').addEventListener('mouseover', function() {
+    document.querySelector('.Box2').style.display = 'block';
+});
+
+document.querySelector('.buy').addEventListener('mouseleave', function() {
+    document.querySelector('.Box2').style.display = 'none';
+});

@@ -137,15 +137,40 @@ a {
     width: 800px;
     overflow: hidden;  
 }
-.artistImg .photoList ul {
-    list-style: none;
-    margin-top: 0;
-    /* margin: 0 auto;  */
-    /* display: flex; */
+.artist:hover{
+    cursor: pointer;
 }
-.artistImg .photoList li {
-    float: left;
-    /* padding: 0 15px; */
+.artist{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;  
+}
+.groupImg{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.photoList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.artist>img{
+    width: 103x;
+    height: 103px;
+}
+.groupName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 10px;
+    margin-top: 1px;
+    background-color:black;
+    color: white;
+    width: 105px;
+    height: 25px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .photoList a {
     overflow: hidden;
@@ -228,16 +253,7 @@ a {
 }
 
 .artistPhoto {
-    display: flex;
-    flex-wrap: wrap;
-}
-.artistPhoto img {
-    height: 300px;
-    width: 50%;
-}
-.artistPhoto img:nth-child(1),
-.artistPhoto img:nth-child(2) {
-    order: -1;
+    text-align: center;
 }
 
 .MV {
@@ -306,7 +322,58 @@ a {
     color: white;
     font-size: 30px;
     font-weight: 500;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
+
+.option p {
+    position: absolute;
+    left: 5%;
+}
+
+.option img {
+    position: absolute;
+    right: 5%;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.listen {
+    position: relative;
+}
+
 .buy {
     margin-top: 15px;
+    position: relative;
+}
+
+/* dropdown */
+.Box1, .Box2 {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    background-color: black;
+    z-index: 1;
+    display: none;
+}
+
+.drop ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.drop li {
+    cursor: pointer;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 5%;
+}
+
+.drop li:hover {
+    background-color: white;
+    color: black;
 }
